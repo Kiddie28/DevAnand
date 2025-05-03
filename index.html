@@ -3,12 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Your Name - Resume & Achievements</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Optional: Add some custom styles here if needed */
+        html {
+            scroll-behavior: smooth; /* Smooth scrolling for internal links */
+        }
+        body {
+            font-family: "Inter", sans-serif; /* Use Inter font */
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 960px; /* Max width for content */
+            margin: 0 auto; /* Center the container */
+            padding: 0 1rem; /* Add padding on smaller screens */
+        }
+    </style>
 </head>
-<body>
-    <h1>Welcome to My Website</h1>
-    <p>I'm gonna make changes eventually : ).</p>
-    <script src="script.js"></script>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-blue-600 text-white p-4 shadow-md">
+        <div class="container flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Your Name</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="hover:underline">About</a></li>
+                    <li><a href="#resume" class="hover:underline">Resume</a></li>
+                    <li><a href="#achievements" class="hover:underline">Achievements</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="py-12 bg-white shadow-sm">
+        <div class="container">
+            <h2 class="text-3xl font-semibold mb-6 border-b-2 border-blue-600 pb-2">About Me</h2>
+            <p>
+                [Write a brief introduction about yourself here. Your skills, interests, and what you're passionate about.]
+                This is where you can introduce yourself to visitors. Keep it concise and engaging!
+            </p>
+        </div>
+    </section>
+
+    <section id="resume" class="py-12">
+        <div class="container">
+            <h2 class="text-3xl font-semibold mb-6 border-b-2 border-blue-600 pb-2">Resume</h2>
+            <p>
+                [You can either embed your resume here, list key experiences, or provide a link to a downloadable PDF.]
+                Consider highlighting your most relevant work experience and education.
+            </p>
+            <p class="mt-4"><a href="link_to_your_resume.pdf" target="_blank" class="text-blue-600 hover:underline">Download Full Resume (PDF)</a></p>
+        </div>
+    </section>
+
+    <section id="achievements" class="py-12 bg-white shadow-sm">
+        <div class="container">
+            <h2 class="text-3xl font-semibold mb-6 border-b-2 border-blue-600 pb-2">Achievements</h2>
+            <p>
+                [List your key achievements, projects, awards, or contributions here. Be specific and quantify results where possible.]
+                Showcase your accomplishments! You can use bullet points or a more detailed format.
+            </p>
+            <ul class="list-disc list-inside mt-4 space-y-2">
+                <li>Achievement 1: Briefly describe the achievement and its impact.</li>
+                <li>Achievement 2: Another key accomplishment.</li>
+                <li>Achievement 3: Highlight a project or award.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white p-6 text-center">
+        <div class="container">
+            <p>&copy; 2023 Your Name. All rights reserved.</p>
+            <p class="mt-2">
+                [Add links to your LinkedIn, GitHub, or other profiles here.]
+                <a href="#" class="text-blue-400 hover:underline">LinkedIn</a> |
+                <a href="#" class="text-blue-400 hover:underline">GitHub</a>
+            </p>
+        </div>
+    </footer>
+
 </body>
 </html>
